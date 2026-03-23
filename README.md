@@ -11,14 +11,14 @@ After successful testing, code is automatically deployed to server/cloud
 Reduces manual work and speeds up delivery
 
 ❌ Task 1: Problems Without CI/CD
-# Without CI/CD, the software development process becomes slow, error-prone, and difficult to manage.
-# Manual Deployment – Deployments are done manually, increasing the risk of human errors.
-# Integration Issues – Merging code from multiple developers can cause conflicts and broken builds.
-# No Automated Testing – Bugs may go unnoticed and reach production.
-# Slow Releases – Delivery of new features is delayed due to manual processes.
-# Environment Inconsistency – Code may work in development but fail in production.
-# Difficult Rollbacks – Fixing failed deployments is complex and time-consuming.
-# Limited Visibility – Hard to track changes, errors, and deployment status.
+ Without CI/CD, the software development process becomes slow, error-prone, and difficult to manage.
+ Manual Deployment – Deployments are done manually, increasing the risk of human errors.
+ Integration Issues – Merging code from multiple developers can cause conflicts and broken builds.
+ No Automated Testing – Bugs may go unnoticed and reach production.
+ Slow Releases – Delivery of new features is delayed due to manual processes.
+ Environment Inconsistency – Code may work in development but fail in production.
+ Difficult Rollbacks – Fixing failed deployments is complex and time-consuming.
+ Limited Visibility – Hard to track changes, errors, and deployment status.
 
 ⚙️ Task 2: Explore GitHub Actions in a Repository
 
