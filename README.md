@@ -39,15 +39,15 @@ name: CI Pipeline
 # Task3 The CI/CD pipeline defines the automated steps from code commit to deployment.
 
 🔹 Pipeline Flow
-Code Commit
+# Code Commit
 Developer pushes code to the GitHub repository
-Trigger Workflow
+# Trigger Workflow
 GitHub Actions workflow is triggered on push
-Build Stage
+# Build Stage
 Application dependencies are installed and build is created
-Test Stage
+# Test Stage
 Automated tests are executed to ensure code quality
-Docker Build (Optional)
+# Docker Build (Optional)
 Docker image is created for the application
 Deployment Stage
 Application is deployed to server (e.g., AWS EC2 / Kubernetes)
