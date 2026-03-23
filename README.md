@@ -36,21 +36,6 @@ Results are shown in the Actions tab
 🔹 Example Workflow
 name: CI Pipeline
 
-name: CI Pipeline
-
-on:
-  push:
-    branches: [main]
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v3
-      - run: npm install
-      - run: npm test
-
 # Task3 The CI/CD pipeline defines the automated steps from code commit to deployment.
 
 🔹 Pipeline Flow
