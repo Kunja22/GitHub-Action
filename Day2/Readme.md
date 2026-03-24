@@ -44,7 +44,7 @@ jobs:
     steps:
       - name: Test
         run: echo "Testing project..."
-   ✅ Task 5: Docker Build & Push
+   # Task 5: Docker Build & Push
    - name: Build, Tag and Push Docker Image
   env:
     REGISTRY: docker.io
@@ -53,7 +53,7 @@ jobs:
 
   run: |
     echo "Building Docker image..."
-    docker build --build-arg ENV=dev -t $REGISTRY/$REPOSITORY:$IMAGE_TAG .
+    docker build --build-arg ENV=dev -t $REGISTRY/$REPOSITORY:$IMAGE_TAG 
 
     echo "Pushing image..."
     docker push $REGISTRY/$REPOSITORY:$IMAGE_TAG
