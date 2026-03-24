@@ -1,14 +1,40 @@
- ✅ Task 1: Trigger Configuration
+ # 🚀 GitHub Actions Workflow Tasks
+
+---
+
+## ✅ Task 1: Trigger Configuration
+
+### 📌 Scenario
+
+A team wants:
+
+* ✔ Workflow to run on Pull Requests
+* ✔ Manual execution option
+
+### 🛠️ Solution
+
+```yaml
+name: PR Workflow
+
 on:
   pull_request:
     branches:
       - main
   workflow_dispatch:
+```
 
-✔ Runs on Pull Request
-✔ Allows manual run
+---
 
-✅ Task 2: Job Dependency Design (Build → Test)
+## ✅ Task 2: Job Dependency Design
+
+### 📌 Scenario
+
+* Build application
+* Run tests **only after build completes**
+
+### 🛠️ Solution
+
+```yaml
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -22,19 +48,41 @@ jobs:
     steps:
       - name: Test step
         run: echo "Running tests..."
+```
 
-✔ needs: build → ensures test runs after build
+---
 
-✅ Task 3: Using GitHub Context Variables
+## ✅ Task 3: Using GitHub Context Variables
+
+### 📌 Task
+
+Print:
+
+* ✔ Branch name
+* ✔ Commit ID
+
+### 🛠️ Solution
+
+```yaml
 - name: Print Branch and Commit
   run: |
     echo "Branch Name: ${{ github.ref }}"
     echo "Commit ID: ${{ github.sha }}"
+```
 
-✔ ${{ github.ref }} → branch
-✔ ${{ github.sha }} → commit ID
+---
 
-✅ Task 4: Pull Request Workflow (Full Example)
+## ✅ Task 4: Pull Request Workflow
+
+### 📌 Scenario
+
+* Trigger: Pull Request
+* Job: Build
+* Job: Test (after build)
+
+### 🛠️ Solution
+
+```yaml
 name: PR Workflow
 
 on:
@@ -55,11 +103,20 @@ jobs:
     steps:
       - name: Test
         run: echo "Testing project..."
+```
 
-✔ Trigger → Pull Request
-✔ Build → Test (dependency)
+---
 
-✅ Task 5: Docker Build & Push
+## ✅ Task 5: Docker Build & Push
+
+### 📌 Scenario
+
+* Build Docker image
+* Push to registry using environment variables
+
+### 🛠️ Solution
+
+```yaml
 - name: Build, Tag and Push Docker Image
   env:
     REGISTRY: docker.io
@@ -70,14 +127,21 @@ jobs:
     echo "Building Docker image..."
     docker build --build-arg ENV=dev -t $REGISTRY/$REPOSITORY:$IMAGE_TAG .
 
-    echo "Pushing image..."
+    echo "Pushing Docker image..."
     docker push $REGISTRY/$REPOSITORY:$IMAGE_TAG
 
     echo "Removing local image..."
     docker rmi $REGISTRY/$REPOSITORY:$IMAGE_TAG
+```
 
-✔ --build-arg ENV=dev → pass environment
-✔ tagging → using env variables
-✔ push → to registry
-✔ cleanup → remove local image
-.
+---
+
+# 🔥 Final Notes
+
+* ✔ `pull_request` → triggers workflow on PR
+* ✔ `workflow_dispatch` → manual run
+* ✔ `needs` → job dependency (build → test)
+* ✔ `${{ github.ref }}` → branch name
+* ✔ `${{ github.sha }}` → commit ID
+
+---
