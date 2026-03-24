@@ -59,4 +59,4 @@ jobs:
     docker push $REGISTRY/$REPOSITORY:$IMAGE_TAG
 
     echo "Removing local image..."
-    docker rmi $REGISTRY/$REPOSITORY:$IMAGE_TAG
+    docker rmi $REGISTRY/$REPOSITORY:$IMAGE_TAG .
