@@ -1,10 +1,10 @@
-✅ Task 1: Trigger Configuration
+# Task 1: Trigger Configuration
  on:
   pull_request:
     branches:
       - main
   workflow_dispatch:
-✅ Task 2: Job Dependency Design (Build → Test)
+# Task 2: Job Dependency Design (Build → Test)
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -18,12 +18,12 @@ jobs:
     steps:
       - name: Test step
         run: echo "Running tests..."
-✅ Task 3: Using GitHub Context Variables
+# Task 3: Using GitHub Context Variables
   - name: Print Branch and Commit
   run: |
     echo "Branch Name: ${{ github.ref }}"
     echo "Commit ID: ${{ github.sha }}"
-✅ Task 4: Pull Request Workflow (Full Example)
+# Task 4: Pull Request Workflow (Full Example)
   name: PR Workflow
 
 on:
