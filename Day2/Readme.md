@@ -80,3 +80,4 @@ jobs:
 ✔ tagging → using env variables
 ✔ push → to registry
 ✔ cleanup → remove local image
+.
