@@ -8,4 +8,4 @@ on:
 
 jobs:
   call-shared-ci:
-    uses: ./shared-ci.yml  # Path corrected because ci.yml aur shared-ci.yml same folder me hain
+    uses: ./shared-ci.yml  
