@@ -9,3 +9,4 @@ on:
 jobs:
   call-shared-ci:
     uses: ./shared-ci.yml  
+    # Force first commit to register workflow
