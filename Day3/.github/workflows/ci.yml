@@ -8,4 +8,4 @@ on:
 
 jobs:
   call-shared-ci:
-    uses: ./workflows/shared-ci.yml  # local path to shared workflow
+    uses: ./shared-ci.yml
