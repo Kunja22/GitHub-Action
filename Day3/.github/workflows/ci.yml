@@ -8,4 +8,4 @@ on:
 
 jobs:
   call-shared-ci:
-    uses: <USERNAME_OR_ORG>/shared-workflows/.github/workflows/shared-ci.yml@main
+    uses: Kunja22/shared-workflows/.github/workflows/shared-ci.yml@main
