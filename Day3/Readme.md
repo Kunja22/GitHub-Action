@@ -40,7 +40,7 @@ jobs:
       - run: npm install
       - run: npm run lint    # Optional: remove if no lint script
       - run: npm test        # Optional: remove if no test script
-Task 2: Call Shared Workflow from Another Repository
+# Task 2: Call Shared Workflow from Another Repository
 Steps:
 Go to your project repository, e.g., demo-project.
 Create workflow file: .github/workflows/ci.yml
