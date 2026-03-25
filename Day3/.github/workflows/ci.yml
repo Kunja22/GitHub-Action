@@ -1,0 +1,11 @@
+name: Demo Project CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  call-shared-ci:
+    uses: ./workflows/shared-ci.yml  # local path to shared workflow
