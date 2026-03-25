@@ -8,5 +8,4 @@ on:
 
 jobs:
   call-shared-ci:
-    uses: Kunja22/shared-workflows/.github/workflows/shared-ci.yml@main
-.
+    uses: ./workflows/shared-ci.yml
