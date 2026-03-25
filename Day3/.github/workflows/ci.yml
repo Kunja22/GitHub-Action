@@ -3,9 +3,9 @@ name: Demo Project CI
 on:
   push:
     branches:
-      - main
+      - main   # ya jo branch tum use kar rahi ho
   pull_request:
 
 jobs:
   call-shared-ci:
-    uses: ./shared-ci.yml
+    uses: ./shared-ci.yml  # Path corrected because ci.yml aur shared-ci.yml same folder me hain
