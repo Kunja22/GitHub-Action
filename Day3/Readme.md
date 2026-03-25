@@ -63,3 +63,4 @@ Commit & push changes to demo-project.
 How it works:
 When you push to main or open a pull request, the workflow in demo-project calls the shared workflow in shared-workflows.
 The shared workflow runs steps like checkout, CI checks, Node setup, npm install, lint, and tests.
+<img width="1882" height="862" alt="image" src="https://github.com/user-attachments/assets/94da4f57-a63e-4e9e-95bf-b646ebdeb79d" />
