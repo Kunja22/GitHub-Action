@@ -4,9 +4,9 @@ on:
   push:
 
 jobs:
-  hello:
+  test:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Say Hello
+      - name: Print
         run: echo "Hello GitHub Actions!"
