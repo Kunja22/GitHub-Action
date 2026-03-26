@@ -21,10 +21,10 @@ jobs:
 
       - name: Build Docker Image
         run: |
-          docker build -t kunja1/myapp:latest .
-          docker build -t kunja1/myapp:${{ github.sha }} .
+          docker build -t kunja1/kunja22:latest .
+          docker build -t kunja1/kunja22:${{ github.sha }} .
 
       - name: Push Docker Image
         run: |
-          docker push kunja1/myapp:latest
-          docker push kunja1/myapp:${{ github.sha }}
+          docker push kunja1/kunja22:latest
+          docker push kunja1/kunja22:${{ github.sha }}
