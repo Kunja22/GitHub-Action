@@ -1,14 +1,9 @@
 name: Hello Workflow
 
-on:
-  push:
-    branches:
-      - "**"
+on: [push]
 
 jobs:
-  hello-job:
+  test:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Print Hello Message
-        run: echo "Hello GitHub Actions!"
+      - run: echo "Hello GitHub Actions!"
