@@ -21,10 +21,10 @@ jobs:
 
       - name: Build Docker Image
         run: |
-          docker build -t ${{ secrets.DOCKER_USERNAME }}/myapp:latest .
-          docker build -t ${{ secrets.DOCKER_USERNAME }}/myapp:${{ github.sha }} .
+          docker build -t ${{ secrets.dockerkunja1 }}/myapp:latest .
+          docker build -t ${{ secrets.dockerkunja1}}/myapp:${{ github.sha }} .
 
       - name: Push Docker Image
         run: |
-          docker push ${{ secrets.DOCKER_USERNAME }}/myapp:latest
-          docker push ${{ secrets.DOCKER_USERNAME }}/myapp:${{ github.sha }}
+          docker push ${{ secrets.dckr_pat_QMXW9a4ePrs97FXe3UV1BlNPibw }}/myapp:latest
+          docker push ${{ secrets.dckr_pat_QMXW9a4ePrs97FXe3UV1BlNPibw }}/myapp:${{ github.sha }}
